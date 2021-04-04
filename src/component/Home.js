@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 import AboutMe from './AboutMe.js';
 import MyTown from './MyTown.js';
 
+const buttonStyle = {
+    backgroundColor: 'blue',
+    color : "black"
+};
+
 class Home extends React.Component {
 
 constructor(props) {
@@ -28,10 +33,10 @@ constructor(props) {
   render() {
     return (
      <div >
-          <button onClick={this.onButtonAboutMeClick.bind(this)}>
+            <button style={buttonStyle} onClick={this.onButtonAboutMeClick.bind(this)}>
              About Me
            </button>
- 	   <button onClick={this.onButtonMyTownClick.bind(this)}>
+            <button style={buttonStyle} onClick={this.onButtonMyTownClick.bind(this)}>
              My Town
            </button>
 
@@ -42,7 +47,9 @@ constructor(props) {
       {this.state.showMyTownComponent ?
            <MyTown /> :
            null
-        }
+            }
+
+            <h5> Click on "My Town" button to view my town details</h5>
     </div>
     );
   }

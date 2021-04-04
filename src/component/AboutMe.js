@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Profile from '../images.jpg';
 
+
 class AboutMe extends React.Component {
   render() {
     return (

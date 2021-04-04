@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Town from '../village.jpg';
 import axios from "axios";
 
+const inlineStyle = {
+    paddingTop: '50px'
+};
 
 class MyTown extends React.Component {
     constructor(props) {
@@ -36,13 +39,13 @@ class MyTown extends React.Component {
 
   render() {
     return (
-     <div >
-         <img src={Town} />
+        <div style={inlineStyle}>
+            <img src={Town}  />
             <h2> I live in Namakkal and it is small village in India</h2>
 
             <span> Current Temperature in Celsius:  {this.state.temperatureinC} </span> 
            
-            <div>
+            <div style={inlineStyle}>
             <button onClick={this.fahrenheitShow.bind(this)}>
                     {this.state.showTemperatureinF ? "hide fahrenheit" : "show fahrenheit"}
             </button>
