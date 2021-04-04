@@ -16,7 +16,7 @@ class MyTown extends React.Component {
     componentDidMount() {        
         axios({
             method: "GET",
-            url: 'http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=60de82b08bbf6e007f5ece65c25cb7b4'
+            url: 'https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=60de82b08bbf6e007f5ece65c25cb7b4'
         }).then((response) => {
             console.log(response.data);
             this.setState({
