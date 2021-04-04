@@ -7,13 +7,9 @@ class Home extends React.Component {
 constructor(props) {
     super(props);
     this.state = {
-      showAboutMeComponent: false,
+      showAboutMeComponent: true,
       showMyTownComponent: false
-    };
-
-  //  this.onButtonAboutMeClick.bind(this);
-  //  this.onButtonMyTownClick.bind(this);
-  
+    }; 
 }
   onButtonAboutMeClick() {
     this.setState({
