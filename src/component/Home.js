@@ -48,8 +48,6 @@ constructor(props) {
            <MyTown /> :
            null
             }
-
-            <h5> Click on "My Town" button to view my town details</h5>
     </div>
     );
   }
